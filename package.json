@@ -1,0 +1,42 @@
+{
+  "name": "grace-shopper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "react-scripts start",
+    "server:dev": "nodemon index",
+    "seed": "node db/seed/reset && node db/seed/data",
+    "lint": "eslint '**/*.+(js|jsx)'"
+  },
+  "precommit": "npm run lint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdmann/grace-shopper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdmann/grace-shopper/issues"
+  },
+  "homepage": "https://github.com/jdmann/grace-shopper#readme",
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.24.0",
+    "faker": "^5.5.3",
+    "nodemon": "^2.0.4"
+  }
+}
