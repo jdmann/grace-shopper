@@ -9,8 +9,15 @@
     "seed": "node db/seed/reset && node db/seed/data",
     "lint": "eslint '**/*.+(js|jsx)'"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "**/*.+(js|jsx)": ["eslint --fix"]
+    "**/*.+(js|jsx)": [
+      "eslint --fix"
+    ]
   },
   "repository": {
     "type": "git",
@@ -39,6 +46,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.24.0",
     "faker": "^5.5.3",
+    "husky": "^7.0.2",
     "nodemon": "^2.0.4"
   }
 }
