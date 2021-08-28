@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { client } = require('../index');
 
-async function dropTables() {
+async function dropTabldes() {
 	await client.query(`
       DROP TABLE IF EXISTS order_products;
       DROP TABLE IF EXISTS orders;
