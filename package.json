@@ -16,8 +16,8 @@
   },
   "lint-staged": {
     "**/*.+(js|jsx)": [
-      "eslint --fix",      "git add"
-
+      "eslint --fix",
+      "git add"
     ]
   },
   "repository": {
@@ -48,6 +48,7 @@
     "eslint-plugin-react": "^7.24.0",
     "faker": "^5.5.3",
     "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "nodemon": "^2.0.4"
   }
 }
