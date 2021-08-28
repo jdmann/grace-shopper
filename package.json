@@ -9,7 +9,9 @@
     "seed": "node db/seed/reset && node db/seed/data",
     "lint": "eslint '**/*.+(js|jsx)'"
   },
-  "precommit": "npm run lint",
+  "lint-staged": {
+    "**/*.+(js|jsx)": ["eslint --fix"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jdmann/grace-shopper.git"
