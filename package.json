@@ -7,18 +7,18 @@
     "start:dev": "react-scripts start",
     "server:dev": "nodemon index",
     "seed": "node db/seed/reset && node db/seed/data",
-    "lint": "eslint '**/*.+(js|jsx)'"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "lint": "eslint ."
   },
   "lint-staged": {
     "**/*.+(js|jsx)": [
       "eslint --fix",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "repository": {
     "type": "git",
